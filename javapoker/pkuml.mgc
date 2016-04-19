@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="javapoker.pk5cardtype" x="552" y="115">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="javapoker.pk5userset" x="572" y="429">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="javapoker.pk5cardtype"/>
+        <Communication destinationClassName="javapoker.pk5cardtype"/>
+    </Class>
+    <Class name="javapoker.pkcardset" x="563" y="549">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="javapoker.mainscreen" x="157" y="104">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="javapoker.pkcardset"
+            endpointName="set1" kind="Simple"/>
+        <Association destinationClassName="javapoker.pk5userset"
+            endpointName="user1" kind="Simple"/>
+        <Association destinationClassName="javapoker.pk5cardtype"
+            endpointName="chkpk" kind="Simple"/>
+        <Communication destinationClassName="javapoker.pk5userset"/>
+        <Communication destinationClassName="javapoker.pkcardset"/>
+    </Class>
+</ClassDiagram>
